@@ -1,0 +1,9 @@
+https://www.softprayog.in/programming/d-bus-tutorial#:~:text=It%20provides%20the%20C%20Language,the%20system%20at%20a%20time.
+
+https://www.cardinalpeak.com/blog/using-dbus-in-embedded-linux
+
+https://www.freedesktop.org/wiki/Software/dbus/
+
+http://www.matthew.ath.cx/articles/dbus
+
+https://dbus.freedesktop.org/doc/api/html/annotated.html

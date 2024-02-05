@@ -1,0 +1,917 @@
+Commits must be squashed before performing a rebase.
+
+Choose only ONE best answer.
+
+A
+True
+
+B
+False
+ChatGPT
+B. False
+
+User
+Which of the following events can trigger a merge conflict?
+
+Choose ALL answers that apply.
+
+A
+Merging
+
+B
+Rebasing
+
+C
+Cherry Picking
+
+D
+Stashing
+ChatGPT
+A. Merging
+B. Rebasing
+C. Cherry Picking
+
+User
+You want to rebase the feature branch onto the base of the main branch. After checking out the  feature branch, what is the correct syntax for rebasing in the CLI?
+
+Choose only ONE best answer.
+
+A
+git rebase feature
+
+B
+git rebase main
+
+C
+git rebase “feature”
+
+D
+git rebase primary
+ChatGPT
+B. git rebase main
+
+User
+What is a Git cherry pick?
+
+Choose only ONE best answer.
+
+A
+A checkout of a remote branch
+
+B
+A patch from a previously merged branch
+
+C
+A set of file changes that are stashed to your working directory
+
+D
+A command that takes changes from a target commit and places them onto the HEAD of your currently checked out branch
+ChatGPT
+D. A command that takes changes from a target commit and places them onto the HEAD of your currently checked out branch
+
+User
+What is one disadvantage to entering the detached HEAD state?
+
+
+New commits are lost when a different branch is checked out
+Additional commits cannot be made
+Cannot checkout a commit that is older than the initial commit
+Creating a branch deletes any commits made during the detached HEAD state
+ChatGPT
+The disadvantage to entering the detached HEAD state is:
+
+A. New commits are lost when a different branch is checked out.
+
+User
+What is a Git Patch?
+
+
+Links to a specific branch, commit, or tag in the repository
+Text files that contain code and Git commit metadata
+A remote branch with a stash
+A diff between 2 tags
+ChatGPT
+A Git Patch is:
+
+B. Text files that contain code and Git commit metadata.
+
+User
+A user deletes the .git/ folder in a repository. Which of the following happens as a direct result?
+
+
+All branches are reset to the initial commit
+All remotes are fetched from their respective git hosting service
+The project’s history is deleted
+A backup of the repository history is created
+ChatGPT
+The correct answer is:
+
+C. The project’s history is deleted.
+
+User
+What happens when you squash commits?
+
+Downloads all changes from a remote and applies those changes to the working directory
+Changes from one commit are introduced into its parent commit
+Changes are applied from a stash to the working directory
+Changes from one commit are removed from the repository
+ChatGPT
+When you squash commits:
+
+B. Changes from one commit are introduced into its parent commit.
+
+User
+You wish to make a change to your project. Order the following workflow steps from first to last.
+
+Review Later
+
+Make changes in your working directory
+
+Commit changes to apply them to your Git repository
+
+Checkout a branch in your repo
+
+Stage changes
+ChatGPT
+The correct order for the workflow steps is:
+
+Checkout a branch in your repo
+Make changes in your working directory
+Stage changes
+Commit changes to apply them to your Git repository
+Review Later
+User
+Commits must be squashed before performing a rebase.
+
+Review Later
+True
+False
+ChatGPT
+False
+
+User
+Which of the following events can trigger a merge conflict?
+
+
+Cherry picking
+Merging
+Stashing
+Rebasing
+ChatGPT
+Merging and Rebasing can trigger merge conflicts.
+
+User
+Git Pull is a combination of which git commands?
+
+
+Git Branch -ff (fast forward) and Git Push
+Git Fetch and Git Merge
+Git Checkout and Git Fetch
+Git Checkout and Git remote update
+ChatGPT
+Git Pull is a combination of:
+
+B. Git Fetch and Git Merge
+
+User
+What is a Git hook?
+
+
+Shell scripts that trigger when you perform a specific action in Git
+A pointer to a specific tag
+A set of changes from a specific commit
+A secure connection to a remote repository over SSH or HTTPS
+ChatGPT
+A Git hook is:
+
+A. Shell scripts that trigger when you perform a specific action in Git.
+
+User
+Match the interactive rebase steps with the corresponding step description.
+
+Review Later
+
+Pick
+
+Drop
+
+Squash
+
+Reword
+ChatGPT
+Sure, here are the matched interactive rebase steps with their descriptions:
+
+Pick - Select a commit to keep in the rebase.
+Drop - Remove a commit from the rebase entirely.
+Squash - Combine a commit with the one before it, allowing you to merge their changes.
+Reword - Modify the commit message of a specific commit.
+Review Later - Indicates you may come back to address this commit later in the rebase process.
+User
+Merging a branch rewrites commit history.
+
+Review Later
+True
+False
+ChatGPT
+False
+
+User
+What is a commit?
+
+A collection of changes from your working directory
+The connecting edges in a directed acyclic graph
+A group of changes between 2 data sets
+A snapshot of your git repository at one point in time
+ChatGPT
+A commit is:
+
+D. A snapshot of your git repository at one point in time.
+
+User
+What is a git cherry-pick?
+
+
+A command that takes changes from a target commit and places them onto the HEAD of your currently checked out branch
+A set of file changes that are stashed to your working directory
+A checkout of a remote branch
+A patch from a previously merged branch
+ChatGPT
+A git cherry-pick is:
+
+A. A command that takes changes from a target commit and places them onto the HEAD of your currently checked out branch.
+
+User
+Which of the following happens when a user performs a git clone?
+
+
+Initializes all tags on the repository
+Creates the initial commit for the cloned repository
+Adds remotes of all repository contributors to the git config file
+Establishes a connection between the local repository on your machine and the remote repository
+ChatGPT
+When a user performs a git clone:
+
+D. Establishes a connection between the local repository on your machine and the remote repository.
+
+User
+Which of the following is not a Git command?
+
+
+Tag
+Merge
+Pull Request
+Stash
+ChatGPT
+"Pull Request" is not a Git command. It's a feature commonly associated with Git hosting services like GitHub, GitLab, and Bitbucket, used for initiating discussions, reviewing, and merging code changes.
+
+User
+What happens when performing a rebase?
+
+
+All branches are pulled from their remote branches
+Git rewrites the commits from a branch
+All changes from one branch are reset to a different branch
+All changes from one branch are removed from a different branch
+ChatGPT
+When performing a rebase:
+
+B. Git rewrites the commits from a branch.
+
+User
+While writing the commit message and description, you notice the description is getting long. Which of the following actions should you consider taking as a best practice?
+
+Review the staged changes and split the commit into more topics and more commits
+Cut out portions of the description even if they leave out noteworthy impactful details
+Discard all changes and try again
+Complete the long description anyway and commit the changes
+ChatGPT
+The best practice in this situation would be:
+
+A. Review the staged changes and split the commit into more topics and more commits.
+
+User
+What is a Git repository?
+
+
+The .git/ folder inside a project
+The service github.com, gitlab.com, etc
+The program you install on your machine from git-scm.org
+An application download for Windows, Mac, or Linux
+ChatGPT
+A Git repository is:
+
+A. The .git/ folder inside a project.
+
+User
+What does it mean to set your upstream?
+
+
+Sets the default pull action when pulling from a remote branch
+Tells Git what remote or branch a local branch should push to and pull from
+Tells Git whether to update submodules when performing a fetch
+Sets the commit message template
+ChatGPT
+Setting upstream in Git means:
+
+B. Tells Git what remote or branch a local branch should push to and pull from.
+
+User
+Where is the official documentation for Git located?
+
+
+Git.github.io
+Kernel.org
+Git-scm.org
+Github.com
+ChatGPT
+The official documentation for Git is located at:
+
+C. Git-scm.org
+
+User
+What is another common name for a pull request?
+
+
+Review request
+Push request
+Merge request
+Remote request
+ChatGPT
+Another common name for a pull request is:
+
+C. Merge request
+
+User
+Commit messages should contain a concise description of what has changed.
+
+True
+False
+ChatGPT
+True
+
+User
+Good commits limit changes to 1 topic.
+
+
+True
+False
+ChatGPT
+True
+
+User
+You can set up a git hook that prevents you from committing if the commit message has a trailing white space.
+
+
+True
+False
+ChatGPT
+True
+
+User
+git reset --hard should be used with extreme caution and only for local changes you’re sure you want to eliminate.
+
+Review Later
+True
+False
+ChatGPT
+True
+
+User
+What does the revert command do?
+
+
+Drops a target commit from the commit history
+Undoes the most recent local action like checkout, cherry-pick, or discard
+Creates a new commit with the inverse changes of another commit or group of commits
+Automatically updates both local and remote branches to undo a commit
+ChatGPT
+The revert command in Git:
+
+C. Creates a new commit with the inverse changes of another commit or group of commits.
+
+User
+Which of the following is a considered remote repository?
+
+
+A repo on your local machine
+A repo hosted on a server
+A repo on your GitHub account
+A repo hosted on your colleagues computer
+ChatGPT
+The following are considered remote repositories:
+
+A repo hosted on a server
+A repo on your GitHub account
+User
+A branch is a group of commits.
+
+Review Later
+True
+False
+ChatGPT
+True
+
+User
+Which of the following is a benefit to using Git LFS?
+
+Review Later
+Saves space by storing binary files in a different location
+Automatically compresses files to save space
+Saves time pushing and pulling to your remote repository
+Automatically keeps your version of Git up to date
+ 
+30
+Which of the following is NOT a benefit of the GitHub Flow branching strategy?
+
+Review Later
+Works great for small teams and web applications
+Allows for Continuous Delivery and Continuous Integration
+Dedicated development branches reduce probability of bugs in production
+GitHub Flow is simple
+ChatGPT
+Among the provided options:
+
+For Git LFS:
+
+Saves space by storing binary files in a different location
+This is not a benefit of GitHub Flow:
+
+Dedicated development branches reduce the probability of bugs in production
+User
+What does a git clone do?
+
+Review Later
+Creates an initial commit for the repository
+Copies all files and changes in a git repository at the time of the clone to a local machine
+Create a new local directory for a target repository
+Copies all files and changes in a git repository at the time of the clone to a remote service
+ChatGPT
+A git clone:
+
+Creates a new local directory for a target repository.
+Copies all files and changes in a git repository at the time of the clone to a local machine.
+User
+Match the git command to the correct description.
+
+Review Later
+
+git commit
+
+git init
+
+git status
+
+git add
+
+git push
+
+git fetch
+ChatGPT
+Here are the matched git commands with their descriptions:
+
+git commit - Records changes to the repository.
+git init - Initializes a new Git repository.
+git status - Shows the status of changes as untracked, modified, or staged.
+git add - Adds changes to the staging area.
+git push - Uploads local repository content to a remote repository.
+git fetch - Downloads commits, branches, and tags from a remote repository.
+User
+give the correct order
+ChatGPT
+Certainly! Here's the correct order:
+
+git init - Initializes a new Git repository.
+git status - Shows the status of changes as untracked, modified, or staged.
+git add - Adds changes to the staging area.
+git commit - Records changes to the repository.
+git push - Uploads local repository content to a remote repository.
+git fetch - Downloads commits, branches, and tags from a remote repository.
+User
+After performing a commit, what action is required before a collaborator can see those changes on their machine?
+
+Review Later
+Create a pull request on the remote hosting service
+All changes must first be staged
+The branch with the commit must be merged
+The branch with the commit should be pushed
+ChatGPT
+After performing a commit, the action required before a collaborator can see those changes on their machine is:
+
+The branch with the commit should be pushed.
+
+User
+In which of the following scenarios does it make sense to perform a cherry-pick?
+
+Review Later
+You made changes in the working directory on the wrong branch, and need to store them for later
+A commit from your project history has changes you need for a bug fix or feature branch
+You made a commit on the wrong branch, and need to get changes over to the correct branch
+You decide you no longer need the changes in your working directory, and need to discard them
+ 
+35
+What is a merge conflict?
+
+Review Later
+A common error message that occurs when merging a branch into a remote branch
+An event triggered when Git is unable to automatically resolve differences in code between two commits
+A mismatch in code between different lines in different files
+An event triggered when an interactive rebase is required instead
+ChatGPT
+In which of the following scenarios does it make sense to perform a cherry-pick?
+
+B. A commit from your project history has changes you need for a bug fix or feature branch.
+
+What is a merge conflict?
+
+B. An event triggered when Git is unable to automatically resolve differences in code between two commits.
+
+User
+Squashing rewrites your commit history. 
+
+Review Later
+True
+False
+ChatGPT
+True
+
+User
+What is a git submodule?
+
+
+An app for establishing secure connections between local and remote repos
+A git command for interacting with external diff or merge tools
+An external diff or merge tool
+A repository inside another git repository
+ChatGPT
+A git submodule is:
+
+D. A repository inside another git repository.
+
+User
+What is a diff?
+
+
+The author of a set of changes
+A group of changes between 2 data sets
+Text files that contain code and Git commit metadata
+The difference between 2 repositories
+ChatGPT
+A diff is:
+
+B. A group of changes between 2 data sets.
+
+User
+Which of the following are interactive rebase steps?
+
+Review Later
+Fixup
+Drop
+Merge
+Pick
+ 
+40
+What is one philosophy related to the git revert action?
+
+Review Later
+When in doubt, don’t force push
+Merging is preferable to rebasing if preserving history is a priority
+Introduce an equal but opposite action to neutralize the effect of an original action
+Git treats all branches equally. Only humans designate a primary branch
+ChatGPT
+Which of the following are interactive rebase steps?
+
+Fixup
+Drop
+Pick
+What is one philosophy related to the git revert action?
+
+Introduce an equal but opposite action to neutralize the effect of an original action
+User
+You wish to create a branch called “feature” via the CLI. Which of the following is valid syntax for this command?
+
+Review Later
+git branch {feature}
+git branch [feature]
+git feature branch
+git branch feature
+42
+What is a branch?
+
+Review Later
+A commit with a parent commit from the main branch
+A set of changes in the working directory
+The edges in a directed acyclic graph
+A pointer to a commit
+ 
+43
+What does the Pick step in an interactive rebase do?
+
+Review Later
+Includes the commit in the rebased branch
+Takes the changes from one commit and adds those changes into the previous commit
+Applies the changes from the selected commit to the working directory
+Takes the files from the selected commit and stashes them
+44
+What is the primary use case for Git LFS (Large File Storage)?
+
+Review Later
+It is a method for improving performance of large text-based repositories
+It is a system for sending patch files of large binary files
+It is a method for improving git performance when working with binary files
+It acts as a local hosting service for the repository
+ 
+45
+All push or pull actions require an established SSH connection.
+
+Review Later
+True
+False
+ChatGPT
+Valid syntax for creating a branch called "feature" via the CLI is:
+
+git branch feature
+
+What is a branch?
+
+A branch is:
+
+D. A pointer to a commit.
+
+What does the Pick step in an interactive rebase do?
+
+The Pick step in an interactive rebase:
+
+A. Includes the commit in the rebased branch.
+
+What is the primary use case for Git LFS (Large File Storage)?
+
+The primary use case for Git LFS is:
+
+C. It is a method for improving git performance when working with binary files.
+
+All push or pull actions require an established SSH connection.
+
+False
+
+User
+Which of the following is NOT a benefit to the Git Flow branching strategy?
+
+Review Later
+It keeps the history a simple straight line, without merges
+The systematic development process allows for efficient testing
+The various types of branches make it easy and intuitive to organize your work
+The use of release branches allows you to easily and continuously support multiple versions of production code
+47
+Which of the following Git workflows come installed by default?
+
+Review Later
+Gitflow
+GitHub flow
+GitLab flow
+None of these
+ChatGPT
+Which of the following is NOT a benefit to the Git Flow branching strategy?
+
+A. It keeps the history a simple straight line, without merges.
+
+Which of the following Git workflows come installed by default?
+
+D. None of these.
+
+User
+You wish to revert a commit with the SHA of 45111a. How do you revert a Git commit in the CLI?
+
+Review Later
+git revert [45111a]
+git revert -45111a
+git revert +45111a
+git revert 45111a
+ChatGPT
+To revert a Git commit in the CLI with the SHA of 45111a, you would use the following command:
+
+bash
+Copy code
+git revert 45111a
+So, the correct option is:
+
+D. git revert 45111a
+
+User
+Match the following actions with their corresponding descriptions.
+
+Review Later
+
+git reset --soft
+
+git reset --mixed
+
+git reset --hard
+ChatGPT
+Here are the actions matched with their corresponding descriptions:
+
+git reset --soft: Resets the HEAD to a specific commit, but keeps changes in the index (staging area).
+
+git reset --mixed: Resets the HEAD to a specific commit and unstages all changes, but preserves the changes in the working directory.
+
+git reset --hard: Resets the HEAD to a specific commit, discarding all changes in the working directory and index (staging area).
+
+User
+give the order
+ChatGPT
+The correct order for the actions is as follows:
+
+git reset --soft
+git reset --mixed
+git reset --hard
+User
+Which command is used to convert a project to a git repository?
+
+Review Later
+git pull
+git open
+​​​​​​​​​​​​git clone
+git init
+ChatGPT
+The command used to convert a project to a Git repository is:
+
+D. git init
+
+User
+A user lacks permissions to push changes to a public repo hosted on GitHub. What should they do first to create a pull request?
+
+Review Later
+Pull the remote branches and then merge changes
+Create the pull request directly on GitHub
+Reach out the repo maintainer and request access
+Fork the repo and clone the fork
+ 
+52
+You wish to merge a branch called feature into a branch called dev. After checking out dev, what is one valid syntax for merging via the CLI?
+
+Review Later
+git feature merge
+git dev merge
+git merge feature
+git merge dev
+53
+What is a disadvantage to rebasing instead of merging?
+
+Review Later
+Rebasing rewrites commit history
+Rebasing takes more time to complete
+Rebasing immediately pushes changes to the remote branch
+Rebasing requires squashing commits before initiating the rebase
+54
+You want to rebase the feature branch onto the base of the main branch. After checking out the  feature branch, what is the correct syntax for rebasing in the CLI?
+
+Review Later
+git rebase main
+git rebase feature
+git rebase “feature”
+git rebase primary
+ 
+55
+What is a Git tag?
+
+Review Later
+A storage area for changes in your WIP
+An indicator for which files are tracked by LFS
+A reference to a specific commit within the history of a Git repository
+A branch that is currently checked out by a collaborator
+ChatGPT
+A user lacks permissions to push changes to a public repo hosted on GitHub. What should they do first to create a pull request?
+
+C. Reach out the repo maintainer and request access
+
+You wish to merge a branch called feature into a branch called dev. After checking out dev, what is one valid syntax for merging via the CLI?
+
+C. git merge feature
+
+What is a disadvantage to rebasing instead of merging?
+
+A. Rebasing rewrites commit history
+
+You want to rebase the feature branch onto the base of the main branch. After checking out the feature branch, what is the correct syntax for rebasing in the CLI?
+
+A. git rebase main
+
+What is a Git tag?
+
+C. A reference to a specific commit within the history of a Git repository
+
+User
+Why would you want to view a Git diff?
+
+Review Later
+Review changes while staging
+Decide whether to rebase or merge
+To update the remote branch
+Copy and paste code from a file
+ 
+57
+Match the following Git commands with the corresponding description:
+
+Review Later
+
+git stash pop
+
+git stash apply
+
+git stash list
+
+git stash show
+Display the changes recorded in the stash entry as a diff
+Restores the most recent stashed changes and deletes stash
+Display all stashed changesets
+Restores the most recent stashed changes and remain in stash list
+ 
+58
+Which of the following statements about branching is true?
+
+Review Later
+Feature branches are only relevant for Gitflow
+All local branches must have a remote branch
+Git provides the tools for creating and managing branches but leaves branching strategies completely open
+The primary branch should always be called master
+ 
+59
+What is a Git remote?
+
+Review Later
+A Git repository hosted on the Internet or some other network
+A script check that automatically triggers when pushing a branch
+A project with a .git/ folder hosted on the user’s machine
+A pointer to a commit
+ 
+60
+All fetch or push actions require an established HTTPS connection.
+
+Review Later
+True
+False
+ChatGPT
+Why would you want to view a Git diff?
+
+A. Review changes while staging
+
+Match the following Git commands with the corresponding description:
+
+git stash pop: Restores the most recent stashed changes and deletes stash
+git stash apply: Restores the most recent stashed changes and remain in stash list
+git stash list: Display all stashed changesets
+git stash show: Display the changes recorded in the stash entry as a diff
+Which of the following statements about branching is true?
+
+C. Git provides the tools for creating and managing branches but leaves branching strategies completely open
+
+What is a Git remote?
+
+A. A Git repository hosted on the Internet or some other network
+
+All fetch or push actions require an established HTTPS connection.
+
+False
+
+User
+Match the following Git commands with the corresponding description:
+
+Review Later
+
+git stash pop
+
+git stash apply
+
+git stash list
+
+git stash show
+list in order
+ChatGPT
+Here are the matched Git commands with their corresponding descriptions:
+
+git stash pop: Restores the most recent stashed changes and deletes the stash.
+git stash apply: Restores the most recent stashed changes and remains in the stash list.
+git stash list: Displays all stashed changesets.
+git stash show: Displays the changes recorded in the stash entry as a diff.
+User
+Match the following Git commands with the corresponding description:
+
+Review Later
+
+git stash pop
+
+git stash apply
+
+git stash list
+
+git stash show
+Display the changes recorded in the stash entry as a diff
+Restores the most recent stashed changes and deletes stash
+Display all stashed changesets
+Restores the most recent stashed changes and remain in stash list
+ChatGPT
+Here are the matched Git commands with their corresponding descriptions:
+
+git stash pop: Restores the most recent stashed changes and deletes the stash.
+git stash apply: Restores the most recent stashed changes and remains in the stash list.
+git stash list: Displays all stashed changesets.
+git stash show: Displays the changes recorded in the stash entry as a diff.

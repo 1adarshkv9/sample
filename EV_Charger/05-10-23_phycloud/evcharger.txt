@@ -1,0 +1,125 @@
+**********************************************************************************************Readme*****************************************************************************************************
+
+EVCharger RuggedBoard firmware installation procedure:
+*******************************************************
+1. Copy required images in SD Card and insert SD Card in RuggedBoard SD card Slot
+
+2.Give the power supply to the Ruggedboard and stop at the barebox level(while booting 1 2 3 count will come press any key to stop at barebox level) and follow the below
+commands
+
+$ mount /dev/mmc0.0 /mnt/
+
+$ cd /mnt/
+
+$ ubiattach /dev/nand0.root
+
+$ cp phytec-qt5demo-image-ruggedboard-imx6ul.ubifs /dev/nand0.root.ubi.root
+
+3.Now give reset command(board will restart)
+
+$ reset
+
+4. After booting the board at present working directory check the "EVCharger.sh" file is exist or not by giving "ls" command.
+
+   $ ls
+
+   if file is not existed then follow below procedure
+
+   a.open file with below command and press "i" to insert data.
+
+	$ vi EVCharger.sh
+
+	and copy the below lines
+
+	#!/bin/sh
+	export $(dbus-launch)
+	/bin/sh /usr/bin/can_config.sh
+	smart_app >> /dev/null &
+	sleep 1
+	can_app >> /dev/null &
+	sleep 1
+	phycloud_app >> /dev/null &
+	sleep 1
+	/home/root/EVChargingApp
+
+
+after copying the above lines press "Esc" and then for save and quit from file give below command
+
+$ :wq
+
+5. Now check "EVcharger.service" file is exising in below directory or not. If it is not exists then follow below procedure
+
+	a.open a file with below command and press "i" to insert data.
+
+	$ vi /lib/systemd/system/EVcharger.service 
+
+	and copy the below lines
+
+
+
+	[Unit]
+	Description=EVCharger Service
+
+	[Service]
+	Type=simple
+	ExecStart=/bin/sh /home/root/EVCharger.sh
+
+	[Install]
+	WantedBy=multi-user.target
+
+
+after copying the above lines press "Esc" and then for save and quit from file give below command
+
+$ :wq
+
+6.Now check "can_config.sh " file is exising in below directory or not. If it is not exists then follow below procedure
+
+	a.open a file with below command and press "i" to insert data.
+
+	vi /usr/bin/can_config.sh 
+
+	and copy the below lines
+
+	#!/bin/sh
+	ifconfig can0
+	ip link set can0 down
+	ip link set can0 type can bitrate 500000
+	ip link set can0 up
+	ifconfig can0
+
+after copying the above lines press "Esc" and then for save and quit from file give below command
+
+$ :wq
+
+7.copy "EVChargingApp" in /home/root directory and "can_app" & "phycloud_app" in /usr/bin  directory for this follow below procedure
+
+$ mount /dev/mmcblk1p1 /mnt/
+
+$ cd /mnt/
+
+$ cp EVChargingApp /home/root
+
+$ cp can_app /usr/bin
+
+$ cp phycloud_app /usr/bin
+
+8. After this remove power and SD card from ruggedBoard and again give power supply.
+
+9. After booting the board give below commands to enable the services.
+
+$ systemctl enable EVcharger.service
+
+$ systemctl start EVcharger.service
+
+10. After this again disconnect the power supply and again reconnect it.
+
+11. Now our Rugged Board firmware is updated so you can test end to end testing.
+
+
+**************************************************************************************************************************************
+
+
+
+
+
+
