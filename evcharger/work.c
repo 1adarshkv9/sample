@@ -332,6 +332,7 @@ void print_st(struct can_json_req *st)
     log_msg(LOG_INFO, STD_OUT, "st->port_id = %d", st->port_id);
     log_msg(LOG_INFO, STD_OUT, "st->action = %s", st->action);
     log_msg(LOG_INFO, STD_OUT, "st->voltage = %f", st->voltage);
+    log_msg(LOG_INFO, STD_OUT, "st->current = %f", st->current);
 }
 
 int valid_port(int p_id)
